@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /fonts/
+Disallow: /audio/
+
+Sitemap: http://www.hopewood-studio.com/sitemap.xml
