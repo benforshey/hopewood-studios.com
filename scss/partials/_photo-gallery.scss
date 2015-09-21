@@ -10,12 +10,6 @@
     margin: .45em .75em 0 0;
     max-width: 10em;
     transition: .4s ease-out all;
-
-    &:focus,
-    &:hover,
-    &:active {
-        transform: scale(1.02);
-    }
 }
 
 .main-gallery {
@@ -30,12 +24,6 @@
     margin: .5em;
     width: 45%;
     transition: .4s ease-out all;
-
-    &:focus,
-    &:hover,
-    &:active {
-        transform: scale(1.02);
-    }
 }
 
 .performance-photo--right {
