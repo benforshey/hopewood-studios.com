@@ -86,9 +86,9 @@
     <main class="main-content">
         <section class="block" id="hopewood">
            <h2 class="visuallyHidden">Hopewood Music Studios</h2>
-            <p class="visualCallout">
+            <!--<p class="visualCallout">
                 Now accepting students for the winter/spring semester! Inquire about <a class="js-scroll nav-in-text" href="#admission">Admission</a> to enroll.
-            </p>
+            </p>-->
             <p>
                 Hopewood Music Studios began in 1993 as a home-school family of music teachers&period; We offer private instruction in a <a class="js-scroll nav-in-text" href="#map">variety of locations</a> and classroom instruction at one location&period;
             </p>
@@ -130,8 +130,52 @@
         </section>
         <section class="block" id="students">
             <h2>Hopewood Students</h2>
+            <h3>December 2016 Recital</h3>
+            <div class="video-wrapper">
+                <iframe id="video" class="video" width="100%" src="https://www.youtube.com/embed/ol0tFMnX55M?rel=0&enablejsapi=1&controls=2&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <script type="text/javascript">
+                var asyncScript = document.createElement('script')
+                asyncScript.id = 'video-script'
+                asyncScript.src = 'https://www.youtube.com/iframe_api'
+
+                var firstScript = document.getElementsByTagName('script')[0]
+                firstScript.parentNode.insertBefore(asyncScript, firstScript)
+
+                function onYouTubeIframeAPIReady() {
+                    var player = new YT.Player('video', {
+                        events: {
+                            'onReady': checkForAutoplay
+                        }
+                    })
+                }
+            </script>
+            <style>
+                .video-wrapper {
+                    margin-top: 2em;
+                    position: relative;
+                }
+
+                .video-wrapper::before {
+                    content: '';
+                    display: block;
+                    padding-top: 56.25%;
+                    width: 100%;
+                }
+
+                .video {
+                    bottom: 0;
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 100%;
+                }
+            </style>
+            <h3>Vocal Performances</h3>
             <p>
-                Toni Howell and her daughter Susannah Forshey perform &quot;For the Beauty of the Earth&quot;&period;
+                Toni Howell and her daughter Susannah Forshey perform &ldquo;For the Beauty of the Earth&rdquo;.
             </p>
             <audio class="audio-ui" controls preload="auto">
                 <source src="audio/for-the-beauty.ogg" type="audio/ogg">
@@ -140,6 +184,7 @@
                     Sorry, but the audio format used on this website doesn't support your browser. Please consider <a href="http://browsehappy.com/">upgrading your browser</a>. You can also <a href="audio/for-the-beauty.ogg" download="Hopewood_Studios.ogg">download the audio file</a> to your device and play it using your own software. If you're looking for audio player software, <a href="https://www.videolan.org/vlc/index.html">try VLC</a>—it's free and open source!
                 </p>
             </audio>
+            <h3>Lessons</h3>
             <p>
                 The students of Hopewood Studios perform and receive lessons.
             </p>
@@ -309,8 +354,8 @@
             <p><span class="fa fa-copyright"></span>&nbsp; 2015 Hopewood Studios</p>
         </div>
         <div class="six-one-eight">
-            <p>hopewood-studios@gmail.com</p>
             <p>(434) 753-6324</p>
+            <p>contact@hopewood-studios.com</p>
         </div>
     </footer>
 
