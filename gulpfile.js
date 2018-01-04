@@ -66,3 +66,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['watch', 'scripts', 'styles']);
+gulp.task('build', ['scripts', 'styles']);
